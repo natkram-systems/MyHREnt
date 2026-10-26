@@ -1,0 +1,46 @@
+myhr/
+├── composer.json
+├── .env.example
+├── public/
+│   ├── index.php
+│   ├── .htaccess
+│   └── assets/vendor/          ← download Bootstrap (instructions at end)
+├── app/
+│   ├── helpers.php
+│   ├── Core/
+│   │   ├── Env.php  Database.php  Request.php  Router.php
+│   │   ├── Auth.php  Rbac.php  Audit.php  Session.php
+│   │   ├── Csrf.php  Flash.php  View.php  Validator.php
+│   ├── Support/
+│   │   ├── DataProvider.php  DataFactory.php
+│   │   ├── DemoData.php  DemoProvider.php  DbProvider.php
+│   ├── Middleware/Middleware.php
+│   ├── Controllers/
+│   │   ├── AuthController.php  DemoController.php
+│   └── Views/
+│       ├── layouts/{app,public}.php
+│       ├── auth/login.php
+│       ├── dashboard/index.php
+│       ├── employees/{index,show}.php
+│       ├── onboarding/show.php
+│       ├── departments/index.php
+│       ├── positions/index.php
+│       ├── jobs/{index,pipeline}.php
+│       ├── applicants/show.php
+│       ├── careers/{index,show,status}.php
+│       ├── timekeeping/{dashboard,terminal,dtr-summary,devices}.php
+│       ├── leave/{index,types}.php
+│       ├── overtime/index.php
+│       ├── payroll/{index,run-detail,payslip}.php
+│       ├── loans/index.php
+│       ├── benefits/index.php
+│       ├── assets/index.php
+│       ├── performance/index.php
+│       ├── training/index.php
+│       ├── announcements/index.php
+│       ├── reports/index.php
+│       ├── audit/index.php
+│       ├── settings/index.php
+│       └── errors/{403,404,419,500}.php
+├── routes/web.php
+└── storage/{logs,uploads,backups}/
